@@ -4,15 +4,19 @@ class Conversation {
 
   public static void main(String[] arguments) {
     Scanner in;
-    Integer round;
+    //Integer round;
     String first_reply;
     
-    in = new Scanner(System.in);
-    round = in.nextInt();
+    //in = new Scanner(System.in);
+    //round = in.nextInt();
 
     System.out.println("Hi there!  What's on your mind?");
     in = new Scanner(System.in);
     first_reply = in.nextLine();
+    if (first_reply.equals("I")){
+      first_reply.replace("I", "you");
+    }
+    
     //Get substrings and check if any of the keywords exist
     
 
